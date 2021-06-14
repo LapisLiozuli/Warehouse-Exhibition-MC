@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "warex",
   "version": "0.0.0+1.16.5",
 
   "name": "Laplio's Template Mod",
@@ -10,7 +10,7 @@
   ],
   "contact": {
     "homepage": "",
-    "sources": "https://github.com/LapisLiozuli/"
+    "sources": "https://github.com/LapisLiozuli/Warehouse-Exhibition-MC"
   },
 
   "license": "MIT",
@@ -19,14 +19,14 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.lapisliozuli.modid.ExampleMod"
+      "com.lapisliozuli.warex.WareX"
     ],
     "client": [
-      "com.lapisliozuli.modid.ExampleModClient"
+      "com.lapisliozuli.warex.WareXClient"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "warex.mixins.json"
   ],
 
   "depends": {

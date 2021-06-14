@@ -4,23 +4,23 @@
       "item": "minecraft:quartz_slab"
     },
     "title": {
-      "translate": "advancements.modid.root.title"
+      "translate": "advancements.warex.root.title"
     },
     "description": {
-      "translate": "advancements.modid.root.description"
+      "translate": "advancements.warex.root.description"
     },
     "frame": "task",
     "show_toast": false,
     "announce_to_chat": false,
     "hidden": false,
-    "background": "modid:textures/gui/advancements/stone_brick.png"
+    "background": "warex:textures/gui/advancements/stone_brick.png"
   },
   "criteria": {
     "slay_slime_white": {
       "trigger": "minecraft:player_killed_entity",
       "conditions": {
         "entity": {
-          "type": "modid:slime_entity_white"
+          "type": "warex:slime_entity_white"
         }
       }
     }
