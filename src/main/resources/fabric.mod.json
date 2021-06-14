@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "modid",
+  "version": "0.0.0+1.16.5",
+
+  "name": "Laplio's Template Mod",
+  "description": "To generate mods with minimal number of steps.",
+  "authors": [
+    "LapisLiozuli"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": "https://github.com/LapisLiozuli/"
+  },
+
+  "license": "MIT",
+  "icon": "",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.lapisliozuli.modid.ExampleMod"
+    ],
+    "client": [
+      "com.lapisliozuli.modid.ExampleModClient"
+    ]
+  },
+  "mixins": [
+    "modid.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": "*",
+    "fabric": "*",
+    "minecraft": "*",
+  },
+  "suggests": {
+  },
+  "accessWidener" : "*"
+}
