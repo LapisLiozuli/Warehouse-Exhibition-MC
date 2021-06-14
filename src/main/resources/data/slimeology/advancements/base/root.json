@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:quartz_slab"
+    },
+    "title": {
+      "translate": "advancements.modid.root.title"
+    },
+    "description": {
+      "translate": "advancements.modid.root.description"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false,
+    "background": "modid:textures/gui/advancements/stone_brick.png"
+  },
+  "criteria": {
+    "slay_slime_white": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "modid:slime_entity_white"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "slay_slime_white"
+    ]
+  ]
+}
