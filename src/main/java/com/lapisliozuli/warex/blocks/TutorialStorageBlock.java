@@ -1,7 +1,10 @@
 package com.lapisliozuli.warex.blocks;
 
+import com.lapisliozuli.warex.entities.blockentities.TutorialStorageBlockEntity;
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockEntityProvider;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.BooleanProperty;
@@ -12,8 +15,9 @@ import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
+import org.jetbrains.annotations.Nullable;
 
-public class TutorialStorageBlock extends Block {
+public class TutorialStorageBlock extends Block implements BlockEntityProvider {
 
     public TutorialStorageBlock(Settings settings) {
         super(settings);
@@ -39,5 +43,12 @@ public class TutorialStorageBlock extends Block {
         boolean hardened = blockState.get(HARDENED);
         if(hardened) return 2.0f;
         else return 0.5f;
+    }
+
+    // This is the only method within the BEP interface.
+    @Nullable
+    @Override
+    public BlockEntity createBlockEntity(BlockView blockView) {
+        return new TutorialStorageBlockEntity();
     }
 }
