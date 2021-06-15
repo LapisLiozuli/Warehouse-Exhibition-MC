@@ -1,0 +1,11 @@
+{
+  "variants":{
+    "":{
+      "model":"warex:block/tut_cardboard_box"
+    }
+  },
+  "variants": {
+    "hardened=false": { "model": "warex:block/tut_cardboard_box" },
+    "hardened=true": { "model": "warex:block/tut_cardboard_box_hardened" }
+  }
+}

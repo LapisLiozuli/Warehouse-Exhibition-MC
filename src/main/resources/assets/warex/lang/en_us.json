@@ -1,0 +1,11 @@
+{
+  "itemGroup.warex.warex":"Modid",
+  "item.warex.template_item":"Template_item",
+  "entity.warex.template_entity":"Template_entity",
+  "block.warex.template_block":"Template_block",
+  "block.warex.tut_cardboard_box":"Tut_Cardboard_Box",
+  "block.warex.tut_tupperware":"Tut_Tupperware",
+  "block.warex.tut_crate":"Tut_Crate",
+  "advancements.warex.root.template_advancements_title":"Template_advancements_title",
+  "advancements.warex.root.template_advancements_description":"Template_advancements_title"
+}

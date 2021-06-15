@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "id": "warex",
-  "version": "0.0.0+1.16.5",
+  "id": "modid",
+  "version": "0.0.0+1.17",
 
-  "name": "Laplio's Template Mod",
-  "description": "To generate mods with minimal number of steps.",
+  "name": "Warehouse Exhibition",
+  "description": "Flaunt the dimensions of your wealth.",
   "authors": [
     "LapisLiozuli"
   ],
@@ -14,7 +14,7 @@
   },
 
   "license": "MIT",
-  "icon": "",
+  "icon": "assets/warex/icon.png",
 
   "environment": "*",
   "entrypoints": {
@@ -32,9 +32,10 @@
   "depends": {
     "fabricloader": "*",
     "fabric": "*",
-    "minecraft": "*",
+    "minecraft": "1.16.5",
+    "java": ">=8"
   },
   "suggests": {
-  },
-  "accessWidener" : "*"
+    "another-mod": "*"
+  }
 }
