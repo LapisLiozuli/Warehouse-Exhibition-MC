@@ -10,6 +10,7 @@ import net.minecraft.screen.slot.Slot;
 
 public class TupperwareScreenHandler extends ScreenHandler {
     private final Inventory inventory;
+    private int invSize = 9;
 
     //This constructor gets called on the client when the server wants it to open the screenHandler,
     //The client will call the other constructor with an empty Inventory and the screenHandler will automatically
@@ -22,7 +23,7 @@ public class TupperwareScreenHandler extends ScreenHandler {
     //and can therefore directly provide it as an argument. This inventory will then be synced to the client.
     public TupperwareScreenHandler(int syncId, PlayerInventory playerInventory, Inventory inventory) {
         super(WareX.TUPPERWARE_SCREEN_HANDLER, syncId);
-        checkSize(inventory, 9);
+        checkSize(inventory, invSize);
         this.inventory = inventory;
         //some inventories do custom logic when a player opens it.
         inventory.onOpen(playerInventory.player);
@@ -33,8 +34,11 @@ public class TupperwareScreenHandler extends ScreenHandler {
         int l;
         //Our inventory
         for (m = 0; m < 3; ++m) {
-            for (l = 0; l < 3; ++l) {
-                this.addSlot(new Slot(inventory, l + m * 3, 62 + l * 18, 17 + m * 18));
+            for (l = 0; l < (invSize / 3); ++l) {
+//                this.addSlot(new Slot(inventory, l + m * 3, 62 + l * 18, 17 + m * 18));
+                this.addSlot(new Slot(inventory, l + m * (invSize / 3), 8 + 54 + l * 18, 84 - 67 + m * 18));
+//                this.addSlot(new Slot(inventory, l + m * (invSize / 3), 8 + l * 18, 84 + m * 18));
+//                this.addSlot(new Slot(inventory, l + m * (invSize / 3) + 9, 8 + l * 18, 84 + m * 18));
             }
         }
         //The player inventory
