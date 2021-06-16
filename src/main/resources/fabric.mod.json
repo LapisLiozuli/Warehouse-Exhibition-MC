@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "modid",
-  "version": "0.0.0+1.17",
+  "version": "${version}",
 
   "name": "Warehouse Exhibition",
   "description": "Flaunt the dimensions of your wealth.",
